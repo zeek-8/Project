@@ -11,6 +11,7 @@ body,html {
     overscroll-behavior: none;
 }
 
+
 #mobile {
     display: none;
 }
@@ -24,6 +25,11 @@ p {
 
 
 @media only screen and (max-width: 450px) {
+    body,html {
+        overscroll-behavior: none;
+        touch-action: none;
+        user-zoom: fixed;
+    }
 
 
     #mobile {
@@ -65,12 +71,18 @@ p {
     /*-----mobile-module-three-----*/
 
     #mobile-module-three {
-   display: grid;
-   width: 100%;
-   overflow-y: auto;
-   grid-auto-rows: 23rem;
-   row-gap: 3rem;
-   align-items: center;
+   
+display: grid;
+   
+width: 100%;
+   
+overflow-y: auto;
+   
+grid-auto-rows: 23rem;
+   
+row-gap: 3rem;
+   
+align-items: center;
 }
 
     .mobile-occupation-nav-profile {
