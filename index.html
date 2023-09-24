@@ -116,11 +116,11 @@
         
         var myDiv = document.getElementById("mobile-module-three");
         
-        function handleResize() {
-            myDiv.style.height = (window.innerHeight - 130) + "px";
-        }
         
-        window.addEventListener("resize", handleResize);
+        myDiv.style.height = (window.innerHeight - 130) + "px";
+        
+        
+        
 
 
         if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
