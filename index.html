@@ -14,46 +14,69 @@
 
         </div>
 
+        
+
         <div id="mobile-module-two">
-            <div class="mobile-profession">
-                <img class="mobile-profession-image"  src="./mobile/mobile-images/profession/water-tap.png">
+            <div class="mobile-occupation">
+                <img class="mobile-occupation-image"  src="./mobile/mobile-images/profession/water-tap.png">
                 <p>Plomero</p>
             </div>
-            <div class="mobile-profession">
-                <img class="mobile-profession-image" src="./mobile/mobile-images/profession/technician.png">
+            <div class="mobile-occupation">
+                <img class="mobile-occupation-image" src="./mobile/mobile-images/profession/technician.png">
                 <p>Tecnico</p>
 
             </div>
-            <div class="mobile-profession">
-                <img class="mobile-profession-image" src="./mobile/mobile-images/profession/bricklayer.png">
+            <div class="mobile-occupation">
+                <img class="mobile-occupation-image" src="./mobile/mobile-images/profession/bricklayer.png">
                 <p>Albañil</p>
 
             </div>
-            <div class="mobile-profession">
-                <img class="mobile-profession-image" src="./mobile/mobile-images/profession/carpenter.png">
+            <div class="mobile-occupation">
+                <img class="mobile-occupation-image" src="./mobile/mobile-images/profession/carpenter.png">
                 <p>Carpintero</p>
             </div>
-            <div class="mobile-profession">
-                <img class="mobile-profession-image" src="./mobile/mobile-images/profession/electrician.png">
+            <div class="mobile-occupation">
+                <img class="mobile-occupation-image" src="./mobile/mobile-images/profession/electrician.png">
                 <p>Electricista</p>
             </div>
-            <div class="mobile-profession">
-                <img class="mobile-profession-image" src="./mobile/mobile-images/profession/blacksmith.png">
+            <div class="mobile-occupation">
+                <img class="mobile-occupation-image" src="./mobile/mobile-images/profession/blacksmith.png">
                 <p>Herrero</p>
             </div>
-            <div class="mobile-profession">
-                <img class="mobile-profession-image" src="./mobile/mobile-images/profession/painter.png">
+            <div class="mobile-occupation">
+                <img class="mobile-occupation-image" src="./mobile/mobile-images/profession/painter.png">
                 <p>Pintor</p>
             </div>
-            <div class="mobile-profession">
-                <img class="mobile-profession-image" src="./mobile/mobile-images/profession/architect.png">
+            <div class="mobile-occupation">
+                <img class="mobile-occupation-image" src="./mobile/mobile-images/profession/architect.png">
                 <p>Arquitecto</p>
             </div>
-
         </div>
+        
 
         <div id="mobile-module-three">
+            <div class="mobile-occupation-nav-profile">
+                <img class="mobile-occupation-nav-image" src="./mobile/mobile-images/ocuppation-profile/worker.jpg">
+            
+            </div>
+            <div class="mobile-occupation-nav-profile">
 
+            </div>
+            <div class="mobile-occupation-nav-profile">
+
+            </div>
+            <div class="mobile-occupation-nav-profile">
+
+            </div>
+            <div class="mobile-occupation-nav-profile">
+
+            </div>
+            <div class="mobile-occupation-nav-profile">
+
+            </div>
+            <div class="mobile-occupation-nav-profile">
+
+            </div>
         </div>
 
         <div id="mobile-module-four">
@@ -83,26 +106,11 @@
 
 
     <script>
-        const allImages = document.querySelectorAll('img');
-        allImages.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-        });
-
-        const dragElements = document.querySelectorAll('div');
-
-            dragElements.forEach(function(element) {
-                element.addEventListener('dragstart', function(e) {
-                    e.preventDefault();
-            });
-        });
-
-        const divElements = document.querySelectorAll('div');
-
-        divElements.forEach(function(div) {
-                div.draggable = false;
-        });
-
-
+      
+        var mobileModuleThree = document.getElementById("mobile-module-three");
+    
+        var screenHeight = window.innerHeight - 70; 
+        mobileModuleThree.style.height = screenHeight + "px"; 
     </script>
     
 </body>
