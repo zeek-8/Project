@@ -19,7 +19,7 @@ img {
 }
 
 p {
-    pointer-events: none;
+    user-select: none;
 }
 
 
@@ -51,7 +51,6 @@ p {
         justify-content: center;
         align-items: center;
         margin: 0 1rem;
-        pointer-events: none;
     }
 
     .mobile-occupation-image {
@@ -114,7 +113,6 @@ p {
     .mobile-section p {
         font-size: 3rem;
         font-weight: 400;
-        user-select: none;
         width: min-content;
         text-align: center;
     }
