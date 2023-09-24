@@ -5,43 +5,43 @@
     margin: 0;
     padding: 0;
     font-size: 10px;
-    font-family: "Roboto",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,html {
+    overscroll-behavior: none;
 }
 
 #mobile {
     display: none;
 }
-
-
-
 img {
     pointer-events: none;
 }
-
 p {
     user-select: none;
+    font-family: "Roboto",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
-
 @media only screen and (max-width: 450px) {
-    #mobile {
-        display: block;
-    }
 
+
+    #mobile {
+    display: block;
+    }
 
 
     /*-----mobile-module-two-----*/
 
     #mobile-module-two {
         display: grid;
-        width: 100%;
         position: sticky;
         top: 0;
+        width: 100%;
+        grid-auto-flow: column;
         grid-auto-rows: 8rem;
         grid-auto-columns: max-content;
-        grid-auto-flow: column;
-        overflow-x: auto;
+        overflow: scroll;
         box-shadow: 0px 0px 9px 0px black;
     }
 
@@ -67,18 +67,14 @@ p {
     /*-----mobile-module-three-----*/
 
     #mobile-module-three {
-        display: grid;
-        height: auto;
-        grid-auto-columns: 100%;
-        grid-auto-rows: 15rem;
-        overflow-y: auto;
-        bottom: 0;
+    display: grid;
+    width: 100%;
+    grid-auto-rows: 15rem;
     }
 
     .mobile-occupation-nav-image {
         width: 5rem;
         height: auto;
-        
     }
 
 
