@@ -121,6 +121,13 @@
         }
         
         window.addEventListener("resize", handleResize);
+
+
+        if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+            document.addEventListener('gesturestart', function (e) {
+                e.preventDefault();
+            });
+        }
      
 
     </script>
