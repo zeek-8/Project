@@ -14,7 +14,13 @@
 
 
 
+img {
+    pointer-events: none;
+}
 
+p {
+    pointer-events: none;
+}
 
 
 
@@ -32,7 +38,7 @@
         width: 100%;
         position: sticky;
         top: 0;
-        grid-auto-rows: 7rem;
+        grid-auto-rows: 8rem;
         grid-auto-columns: max-content;
         grid-auto-flow: column;
         overflow-x: auto;
@@ -49,16 +55,13 @@
     }
 
     .mobile-occupation-image {
-        height: 3.6rem;
+        height: 4.0rem;
         width: auto;
-        
-        
     }
 
-    .mobile-profession p {
-        font-size: 1.9rem;
+    .mobile-occupation p {
+        font-size: 1.8rem;
         font-weight: 300;
-        user-select: none;
     }
 
 
@@ -89,7 +92,7 @@
         bottom: 0;
         width: 100%;
         grid-auto-columns: 1fr;
-        grid-auto-rows: 10rem;
+        grid-auto-rows: 8rem;
         grid-auto-flow: column;
         box-shadow: 0px 0px 9px 0px black;
     }
@@ -105,7 +108,7 @@
     .mobile-section-image {
         height: 3.7rem;
         width: auto;
-        pointer-events: none;
+       
     }
 
     .mobile-section p {
