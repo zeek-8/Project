@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="./mobile/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/smw2qnk.css">
     <title>BuildEase</title>
@@ -112,11 +112,15 @@
 
 
     <script>
-         
-        var myDiv = document.getElementById("mobile-module-three");
-
         
-        myDiv.style.height = (window.innerHeight - 160) + "px";
+        
+        var myDiv = document.getElementById("mobile-module-three");
+        
+        function handleResize() {
+            myDiv.style.height = (window.innerHeight - 130) + "px";
+        }
+        
+        window.addEventListener("resize", handleResize);
      
 
     </script>
