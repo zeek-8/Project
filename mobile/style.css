@@ -72,18 +72,18 @@ p {
 
     #mobile-module-three {
    
-display: grid;
-   
-width: 100%;
-   
-overflow-y: auto;
-   
-grid-auto-rows: 23rem;
-   
-row-gap: 3rem;
-   
-align-items: center;
-}
+    display: grid;
+    
+    width: 100%;
+    
+    overflow-y: auto;
+    
+    grid-auto-rows: 23rem;
+    
+    row-gap: 3rem;
+    
+    align-items: center;
+    }
 
     .mobile-occupation-nav-profile {
     height: 100%;
