@@ -112,42 +112,33 @@
 
 
     <script>
-        let previousViewportWidth = window.innerWidth;
-        let previousViewportHeight = window.innerHeight;
-
-        function adjustWebpageSize() {
-            const contentDiv = document.getElementById("mobile-module-three");
-            const currentViewportWidth = window.innerWidth;
-            const currentViewportHeight = window.innerHeight;
-
-            // Check if the viewport dimensions have changed (excluding zooming)
-            if (
-                currentViewportWidth !== previousViewportWidth ||
-                currentViewportHeight !== previousViewportHeight
-            ) {
-                const newHeight = currentViewportHeight - 120; // Subtract 120 pixels
-
-                // Set the new height for the content div
-                contentDiv.style.height = newHeight + "px";
-
-                // Update the previous viewport dimensions
-                previousViewportWidth = currentViewportWidth;
-                previousViewportHeight = currentViewportHeight;
-            }
-        }
-
-        // Add an event listener for the resize event
-        window.addEventListener("resize", adjustWebpageSize);
-
-        // Initialize the function for the initial height and viewport dimensions
-        adjustWebpageSize();
         
         
+        
+
+
         if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
             document.addEventListener('gesturestart', function (e) {
                 e.preventDefault();
             });
         }
+
+
+                
+        function adjustWebpageSize() {
+            const contentDiv = document.getElementById("mobile-module-three");
+            const newHeight = window.innerHeight - 120; // Subtract 120 pixels
+
+            // Set the new height for the content div
+            contentDiv.style.height = newHeight + "px";
+        }
+
+        // Add an event listener for the resize event
+        window.addEventListener("resize", adjustWebpageSize);
+
+        // Initialize the function for the initial height
+        adjustWebpageSize();
+        
      
 
     </script>
