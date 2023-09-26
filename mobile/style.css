@@ -102,8 +102,6 @@ p {
     /*-----mobile-module-five-----*/
     #mobile-module-five{
         display: grid;
-        position: absolute;
-        bottom: 0;
         width: 100%;
         grid-auto-columns: 1fr;
         grid-auto-rows: 6rem;
