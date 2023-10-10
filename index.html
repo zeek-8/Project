@@ -225,25 +225,29 @@
         mobileSectionImages[0].style.display = "none";
 
 
-        function bord() {
+        function interactiveMenu() {
             var clickedIndex = Array.prototype.indexOf.call(mobileSections, event.target);
 
-            // Remove the border from all buttons
+           
             for (let i = 0; i < mobileSectionBlueImages.length; i++) {
                 mobileSectionBlueImages[i].style.display = "none";
                 mobileSectionImages[i].style.display = "block"
             }
 
-            // Set the border to black for the clicked button
+            
             mobileSectionBlueImages[clickedIndex].style.display = "block";
             mobileSectionImages[clickedIndex].style.display = "none";
         }
 
         for (let i = 0; i < mobileSections.length; i++) {
-            mobileSections[i].addEventListener("touchstart", bord);
+            mobileSections[i].addEventListener("touchstart", interactiveMenu);
         }
 
+        //-----------------------------------------------------------------------
 
+        var cards = document.getElementsByClassName("card");
+
+        cards[cards.length - 1].style.margin = "3rem 0px 3rem 0px"
 
 
 
