@@ -190,9 +190,15 @@ span {
 
 
     .mobile-section-image {
+        display: block;
         height: 3.7rem;
         width: auto;
+    }
 
+    .mobile-section-blue-image {
+        display: none;
+        height: 3.7rem;
+        width: auto;
     }
 
     .mobile-section p {
